@@ -20,11 +20,13 @@ def extract_data():
     tire_prices = driver.find_elements(By.CLASS_NAME, "pricing")
     brand_name = driver.find_elements(By.CLASS_NAME, "brandName")
     model_name = driver.find_elements(By.CLASS_NAME, "modelName")
+    total_price = driver.find_elements(By.CLASS_NAME, "pricingValue")
 
     # Collect the data
     tire_price_list = [element.text for element in tire_prices]
     brand_name_list = [element.text for element in brand_name]
     model_name_list = [element.text for element in model_name]
+    total_price_list = [element.text for element in total_price]
 
     total_price_list = []
     index = 1
