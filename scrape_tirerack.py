@@ -53,7 +53,7 @@ extract_data()
 while True:
     try:
         # Wait for the "Next" button to be clickable
-        next_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "nextButton")))
+        next_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "nextArrowLink")))
         next_button.click()
 
         # Wait for the next page to load completely
